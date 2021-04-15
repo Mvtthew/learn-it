@@ -1,5 +1,5 @@
 <template>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
 			<router-link class="navbar-brand" to="/"><i class="bx bxs-truck me-2"></i>LearnIT</router-link>
 			<button
