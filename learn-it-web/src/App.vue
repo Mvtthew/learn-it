@@ -1,15 +1,22 @@
 <template>
 	<div id="app">
 		<Navbar />
-		<div class="container py-5">
+		<main class="container py-5">
 			<router-view />
-		</div>
+		</main>
+		<Footer />
 	</div>
 </template>
 
 <script>
+import Footer from "./components/Footer.vue";
 import Navbar from "./components/Navbar.vue";
 export default {
-	components: { Navbar },
+	components: { Navbar, Footer },
 };
 </script>
+
+<style lang="sass">
+main
+	min-height: calc(100vh - 56px - 56px)
+</style>

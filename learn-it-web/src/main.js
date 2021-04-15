@@ -5,10 +5,12 @@ import store from "./store";
 
 // Bootstrap 5
 import "bootstrap";
-import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Boxicons
 import "../node_modules/boxicons/css/boxicons.min.css";
+
+// Custom styles
+import "./styles/styles.sass";
 
 Vue.config.productionTip = false;
 
