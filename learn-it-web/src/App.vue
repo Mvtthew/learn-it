@@ -1,7 +1,7 @@
 <template>
 	<div id="app">
 		<Navbar />
-		<div class="container">
+		<div class="container py-5">
 			<router-view />
 		</div>
 	</div>

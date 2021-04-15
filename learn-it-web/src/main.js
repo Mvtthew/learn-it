@@ -7,6 +7,9 @@ import store from "./store";
 import "bootstrap";
 import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+// Boxicons
+import "../node_modules/boxicons/css/boxicons.min.css";
+
 Vue.config.productionTip = false;
 
 new Vue({
