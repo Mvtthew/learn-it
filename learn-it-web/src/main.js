@@ -1,16 +1,11 @@
-import Vue from "vue";
+import "bootstrap";
+import "../node_modules/boxicons/css/boxicons.min.css";
+import "./styles/styles.sass";
+
 import App from "./App.vue";
+import Vue from "vue";
 import router from "./router";
 import store from "./store";
-
-// Bootstrap 5
-import "bootstrap";
-
-// Boxicons
-import "../node_modules/boxicons/css/boxicons.min.css";
-
-// Custom styles
-import "./styles/styles.sass";
 
 Vue.config.productionTip = false;
 
