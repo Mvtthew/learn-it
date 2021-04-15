@@ -1,6 +1,6 @@
 import "bootstrap";
 import "../node_modules/boxicons/css/boxicons.min.css";
-import "./styles/styles.sass";
+import "./styles/styles.scss";
 
 import App from "./App.vue";
 import Vue from "vue";

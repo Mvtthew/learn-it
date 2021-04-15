@@ -16,8 +16,9 @@ export default {
 };
 </script>
 
-<style lang="sass">
-main
-	min-height: calc(100vh - 56px - 56px)
-	margin-top: 56px
+<style lang="scss">
+main {
+	min-height: calc(100vh - 56px - 56px);
+	margin-top: 56px;
+}
 </style>
