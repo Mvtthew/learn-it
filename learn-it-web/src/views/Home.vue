@@ -9,10 +9,10 @@
 			<div>
 				<h1 class="display-1">Learn<span class="text-primary fw-bold">IT</span></h1>
 				<p class="mb-4">Najlepsza aplikacja do nauki <strong>wszystkiego</strong>.</p>
-				<button class="btn btn-primary me-2 btn-lg">
+				<router-link to="/login" class="btn btn-primary me-2 btn-lg">
 					Rozpocznij naukę
 					<i class="bx bx-caret-right ms-1"></i>
-				</button>
+				</router-link>
 			</div>
 		</div>
 		<div class="mb-5">

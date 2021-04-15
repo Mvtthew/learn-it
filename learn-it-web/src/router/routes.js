@@ -9,4 +9,14 @@ export const routes = [
 		name: "About",
 		component: () => import("../views/About.vue"),
 	},
+	{
+		path: "/dashboard",
+		name: "Dashboard",
+		component: () => import("../views/Dashboard.vue"),
+	},
+	{
+		path: "/login",
+		name: "Login",
+		component: () => import("../views/Login.vue"),
+	},
 ];
