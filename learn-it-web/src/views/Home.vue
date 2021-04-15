@@ -10,7 +10,7 @@
 				<h1 class="display-1">
 					LearnIT
 				</h1>
-				<p class="mb-4">Najlepsza aplikacja do nauki wszystkiego</p>
+				<p class="mb-4">Najlepsza aplikacja do nauki <strong>wszystkiego</strong>.</p>
 				<button class="btn btn-primary me-2 btn-lg">
 					Rozpocznij naukę
 					<i class="bx bx-caret-right ms-1"></i>
@@ -22,21 +22,21 @@
 			<div class="row">
 				<div class="col text-center">
 					<div class="p-4 rounded-3">
-						<i class="bx bx-accessibility display-1"></i>
+						<i class="bx bx-accessibility display-1 text-primary"></i>
 						<h4 class="mb-4">Kursy</h4>
 						<p>Ucz się z kursami, którę tutaj kiedyś będą</p>
 					</div>
 				</div>
 				<div class="col text-center">
 					<div class="p-4 rounded-3">
-						<i class="bx bx-alarm display-1"></i>
+						<i class="bx bx-alarm display-1 text-primary"></i>
 						<h4 class="mb-4">Zadania</h4>
 						<p>Wykonuj zadania oraz sprawdzaj siebie w codziennych konkursach</p>
 					</div>
 				</div>
 				<div class="col text-center">
 					<div class="p-4 rounded-3">
-						<i class="bx bx-question-mark display-1"></i>
+						<i class="bx bx-question-mark display-1 text-primary"></i>
 						<h4 class="mb-4">Odpowiedzi</h4>
 						<p>Zadawaj pytania i otrzymuj odpowiedzi</p>
 					</div>
