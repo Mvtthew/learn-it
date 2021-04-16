@@ -24,4 +24,9 @@ export const routes = [
 		name: "Logout",
 		component: () => import("../views/Logout.vue"),
 	},
+	{
+		path: "/task/:id",
+		name: "Task",
+		component: () => import("../views/Task.vue"),
+	},
 ];

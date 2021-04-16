@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Mvtthew/learn-it#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "marked": "^2.0.3"
   }
