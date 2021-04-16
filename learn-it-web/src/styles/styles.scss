@@ -18,6 +18,9 @@ body {
 	width: 100%;
 	padding-right: 3rem;
 }
+
 .sidebar {
 	min-width: 300px;
+	top: calc(56px + 3rem);
+	height: 0;
 }

@@ -7,8 +7,9 @@
 			<courses-summary></courses-summary>
 		</div>
 
-		<div class="sidebar">
-			<Profile-card></Profile-card>
+		<div class="sidebar position-sticky">
+			<profile-card class="mb-3"></profile-card>
+			<profile-stats></profile-stats>
 		</div>
 	</div>
 </template>
@@ -16,12 +17,14 @@
 <script>
 import CoursesSummary from "../components/dashboard/CoursesSummary.vue";
 import ProfileCard from "../components/dashboard/ProfileCard.vue";
+import ProfileStats from "../components/dashboard/ProfileStats.vue";
 import TodayTask from "../components/dashboard/TodayTask.vue";
 export default {
 	components: {
 		ProfileCard,
 		CoursesSummary,
 		TodayTask,
+		ProfileStats,
 	},
 	name: "Dashboard",
 };

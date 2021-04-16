@@ -1,5 +1,5 @@
 <template>
-	<div class="profile-card position-sticky bg-dark rounded-3 p-5">
+	<div class="profile-card bg-dark rounded-3 p-5">
 		<div class="rounded-circle avatar mx-auto mb-4">
 			UN
 			<span class="level bg-primary">69</span>
@@ -9,9 +9,6 @@
 </template>
 
 <style scoped lang="scss">
-.profile-card {
-	top: calc(56px + 3rem);
-}
 .avatar {
 	width: 150px;
 	height: 150px;
