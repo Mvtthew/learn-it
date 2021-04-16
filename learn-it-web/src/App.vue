@@ -2,7 +2,9 @@
 	<div id="app">
 		<Navbar />
 		<main class="container py-5">
-			<router-view />
+			<vue-page-transition name="fade-in-right">
+				<router-view />
+			</vue-page-transition>
 		</main>
 		<Footer />
 	</div>
