@@ -19,4 +19,9 @@ export const routes = [
 		name: "Login",
 		component: () => import("../views/Login.vue"),
 	},
+	{
+		path: "/logout",
+		name: "Logout",
+		component: () => import("../views/Logout.vue"),
+	},
 ];

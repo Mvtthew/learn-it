@@ -24,6 +24,10 @@ $primary-to: #681531;
 	@include primary-gradient;
 }
 
+.btn-primary {
+	border: 0;
+}
+
 .form-control {
 	color: white;
 	background-color: #111111;
@@ -38,8 +42,4 @@ $primary-to: #681531;
 a {
 	color: #fff;
 	text-decoration: none;
-}
-
-.btn {
-	border: 0;
 }

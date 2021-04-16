@@ -26,12 +26,18 @@
 			>
 				<i class="bx bx-link"></i>
 			</button>
-			<button class="btn btn-outline-primary btn-icon mx-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ustawienia konta">
+			<button class="btn  btn-outline-primary btn-icon mx-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ustawienia konta">
 				<i class="bx bx-wrench"></i>
 			</button>
-			<button class="btn btn-outline-primary btn-icon mx-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Wyloguj się">
+			<router-link
+				to="/logout"
+				class="btn btn-outline-primary btn-icon mx-1"
+				data-bs-toggle="tooltip"
+				data-bs-placement="bottom"
+				title="Wyloguj się"
+			>
 				<i class="bx bx-log-out"></i>
-			</button>
+			</router-link>
 		</div>
 	</div>
 </template>
