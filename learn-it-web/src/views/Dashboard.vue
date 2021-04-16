@@ -2,28 +2,28 @@
 	<div class="d-xl-flex">
 		<div class="sidebar position-sticky">
 			<profile-card class="mb-3"></profile-card>
-			<profile-stats></profile-stats>
+			<profile-stats-card></profile-stats-card>
 		</div>
 		<div class="content">
 			<h1>Witaj <span class="text-primary">USERNAME</span></h1>
 			<p>Jest {{ now | moment("dddd, DD MMMM YYYY") }}, godzina {{ now | moment("HH:mm:ss") }}</p>
-			<today-task></today-task>
-			<courses-summary></courses-summary>
+			<today-task-card></today-task-card>
+			<courses-summary-card></courses-summary-card>
 		</div>
 	</div>
 </template>
 
 <script>
-import CoursesSummary from "../components/dashboard/CoursesSummary.vue";
+import CoursesSummaryCard from "../components/dashboard/CoursesSummaryCard.vue";
 import ProfileCard from "../components/dashboard/ProfileCard.vue";
-import ProfileStats from "../components/dashboard/ProfileStats.vue";
-import TodayTask from "../components/dashboard/TodayTask.vue";
+import ProfileStatsCard from "../components/dashboard/ProfileStatsCard.vue";
+import TodayTaskCard from "../components/dashboard/NewestTaskCard.vue";
 export default {
 	components: {
 		ProfileCard,
-		CoursesSummary,
-		TodayTask,
-		ProfileStats,
+		CoursesSummaryCard,
+		TodayTaskCard,
+		ProfileStatsCard,
 	},
 	name: "Dashboard",
 	data() {

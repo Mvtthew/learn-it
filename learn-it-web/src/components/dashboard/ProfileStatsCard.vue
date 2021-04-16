@@ -65,6 +65,6 @@
 
 <script>
 export default {
-	name: "ProfileStats",
+	name: "ProfileStatsCard",
 };
 </script>

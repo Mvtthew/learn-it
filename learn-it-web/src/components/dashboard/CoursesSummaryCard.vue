@@ -67,6 +67,6 @@
 
 <script>
 export default {
-	name: "CoursesSummary",
+	name: "CoursesSummaryCard",
 };
 </script>

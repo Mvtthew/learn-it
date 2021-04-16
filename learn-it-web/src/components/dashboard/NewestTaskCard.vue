@@ -6,9 +6,9 @@
 		</div>
 		<h2>
 			<i class="bx bx-meteor text-primary"></i>
-			Dzisiejsze zadanie
+			Najnowsze zadanie
 		</h2>
-		<p class="mb-5">Sprawdź swoje umiejętności w dzisiejszym zadaniu</p>
+		<p class="mb-5">Sprawdź swoje umiejętności w najnowszym zadaniu</p>
 		<a href="#" class="btn btn-lg btn-primary">
 			Przejdź do zadania
 			<i class="bx bx-chevron-right"></i>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-	name: "TodayTask",
+	name: "NewestTaskCard",
 };
 </script>
 
