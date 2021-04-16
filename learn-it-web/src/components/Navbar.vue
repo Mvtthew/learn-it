@@ -34,6 +34,12 @@
 					<li class="nav-item">
 						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Logowanie</a>
 					</li>
+					<li class="nav-item ms-5">
+						<router-link to="/dashboard" class="nav-link btn btn-sm btn-primary">
+							<i class="bx bxs-dashboard me-2"></i>
+							Dashboard
+						</router-link>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -45,3 +51,14 @@ export default {
 	name: "Navbar",
 };
 </script>
+
+<style scoped lang="scss">
+.btn {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 1rem !important;
+	padding-right: 1rem !important;
+}
+</style>
