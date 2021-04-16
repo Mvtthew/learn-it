@@ -6,7 +6,14 @@
 		</div>
 		<h4 class="text-center">Username</h4>
 		<div class="progress">
-			<div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+			<div
+				class="progress-bar bg-primary"
+				role="progressbar"
+				style="width: 45%;"
+				aria-valuenow="45"
+				aria-valuemin="0"
+				aria-valuemax="100"
+			></div>
 		</div>
 		<small class="d-block text-center">560/1000 xp</small>
 		<div class="mt-4 d-flex justify-content-center">
@@ -18,10 +25,10 @@
 			>
 				<i class="bx bx-link"></i>
 			</button>
-			<button class="btn btn-outline-primary btn-icon mx-1">
+			<button class="btn btn-outline-primary btn-icon mx-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ustawienia konta">
 				<i class="bx bx-wrench"></i>
 			</button>
-			<button class="btn btn-outline-primary btn-icon mx-1">
+			<button class="btn btn-outline-primary btn-icon mx-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Wyloguj się">
 				<i class="bx bx-log-out"></i>
 			</button>
 		</div>

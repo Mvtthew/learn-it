@@ -2,7 +2,7 @@
 	<div class="d-flex">
 		<div class="content">
 			<h1>Witaj <span class="text-primary">USERNAME</span></h1>
-			<p>Jest {{ new Date() | moment("dddd, DD MMMM YYYY") }}</p>
+			<p>Jest {{ now | moment("dddd, DD MMMM YYYY") }}, godzina {{ now | moment("HH:mm:ss") }}</p>
 			<today-task></today-task>
 			<courses-summary></courses-summary>
 		</div>
@@ -27,5 +27,15 @@ export default {
 		ProfileStats,
 	},
 	name: "Dashboard",
+	data() {
+		return {
+			now: new Date(),
+		};
+	},
+	created() {
+		setInterval(() => {
+			this.now = new Date();
+		}, 1000);
+	},
 };
 </script>

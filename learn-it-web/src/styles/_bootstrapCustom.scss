@@ -8,14 +8,20 @@ $dark: #0a0a0a;
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 $black: #000;
-.shadow {
-	box-shadow: 20px 20px 60px #0e0e0e, -20px -20px 60px #141414;
+
+$gradient-direction: 44deg;
+$primary-to: #681531;
+@mixin primary-gradient {
+	background: linear-gradient($gradient-direction, $primary, $primary-to);
 }
-.shadow-sm {
-	box-shadow: 0 0 0.25rem rgba($black, 0.075) !important;
+.text-primary {
+	background: linear-gradient($gradient-direction, $primary, $primary-to);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
-.shadow-lg {
-	box-shadow: 0 0 3rem rgba($black, 0.175) !important;
+.bg-primary,
+.btn-primary {
+	@include primary-gradient;
 }
 
 .form-control {
@@ -31,4 +37,9 @@ $black: #000;
 
 a {
 	color: #fff;
+	text-decoration: none;
+}
+
+.btn {
+	border: 0;
 }

@@ -12,7 +12,7 @@
 			</h4>
 			<div class="progress mb-2">
 				<div
-					class="progress-bar progress-bar-striped progress-bar-animated"
+					class="progress-bar bg-primary"
 					role="progressbar"
 					style="width: 45%;"
 					aria-valuenow="45"
@@ -22,7 +22,7 @@
 					45%
 				</div>
 			</div>
-			<a href="#" class="btn btn-sm btn-outline-primary"> Kontynuuj kurs <i class="bx bx-chevron-right"></i> </a>
+			<a href="#"> Kontynuuj kurs <i class="bx bx-chevron-right"></i></a>
 		</div>
 		<div class="mb-4">
 			<h4>
@@ -31,7 +31,7 @@
 			</h4>
 			<div class="progress mb-2">
 				<div
-					class="progress-bar progress-bar-striped progress-bar-animated"
+					class="progress-bar bg-primary"
 					role="progressbar"
 					style="width: 69%;"
 					aria-valuenow="69"
@@ -41,7 +41,7 @@
 					69%
 				</div>
 			</div>
-			<a href="#" class="btn btn-sm btn-outline-primary"> Kontynuuj kurs <i class="bx bx-chevron-right"></i> </a>
+			<a href="#"> Kontynuuj kurs <i class="bx bx-chevron-right"></i></a>
 		</div>
 		<div>
 			<h4>
@@ -50,7 +50,7 @@
 			</h4>
 			<div class="progress mb-2">
 				<div
-					class="progress-bar progress-bar-striped progress-bar-animated"
+					class="progress-bar bg-primary"
 					role="progressbar"
 					style="width: 19%;"
 					aria-valuenow="19"
@@ -60,7 +60,7 @@
 					19%
 				</div>
 			</div>
-			<a href="#" class="btn btn-sm btn-outline-primary"> Kontynuuj kurs <i class="bx bx-chevron-right"></i> </a>
+			<a href="#"> Kontynuuj kurs <i class="bx bx-chevron-right"></i></a>
 		</div>
 	</div>
 </template>
