@@ -7,7 +7,7 @@ export const tooltipsMixin = {
 		};
 	},
 	methods: {
-		initTooltips() {
+		init() {
 			setTimeout(() => {
 				this.tooltipTriggerList = [];
 				[].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]')).forEach((tooltipTriggerEl) => {

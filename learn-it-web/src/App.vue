@@ -20,7 +20,7 @@ export default {
 	watch: {
 		$route() {
 			tooltipsMixin.methods.hideAll();
-			tooltipsMixin.methods.initTooltips();
+			tooltipsMixin.methods.init();
 		},
 	},
 };

@@ -1,5 +1,5 @@
 <template>
-	<div class="py-5 my-5 d-flex align-items-center justify-content-center flex-column">
+	<div class="h-screen d-flex align-items-center justify-content-center flex-column">
 		<i class="display-1 text-primary bx bx-heart"></i>
 		<h5 class="text-white-50">Miłego życia</h5>
 	</div>

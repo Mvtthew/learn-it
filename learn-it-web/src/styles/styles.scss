@@ -8,6 +8,7 @@ body {
 	color: #fdfdfd;
 	font-family: "Work Sans";
 }
+
 ::-webkit-scrollbar {
 	width: 4px;
 }
@@ -62,4 +63,8 @@ body {
 	.bx {
 		top: -1px;
 	}
+}
+
+.h-screen {
+	height: calc(100vh - 56px - 56px - 6rem);
 }

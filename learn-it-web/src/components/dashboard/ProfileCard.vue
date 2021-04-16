@@ -18,14 +18,6 @@
 		<small class="d-block text-center">560 <i class="bx bx-meteor"></i></small>
 
 		<div class="mt-4 d-flex justify-content-center">
-			<button
-				class="btn btn-outline-primary btn-icon mx-1"
-				data-bs-toggle="tooltip"
-				data-bs-placement="bottom"
-				title="Kopiuj link do profilu"
-			>
-				<i class="bx bx-link"></i>
-			</button>
 			<button class="btn  btn-outline-primary btn-icon mx-1" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ustawienia konta">
 				<i class="bx bx-wrench"></i>
 			</button>
