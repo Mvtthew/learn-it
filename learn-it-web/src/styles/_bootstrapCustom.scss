@@ -17,3 +17,14 @@ $black: #000;
 .shadow-lg {
 	box-shadow: 0 0 3rem rgba($black, 0.175) !important;
 }
+
+.form-control {
+	color: white;
+	background-color: #111111;
+	border: 1px solid rgba(#fff, 0.075);
+	&:active,
+	&:focus {
+		background-color: #111111;
+		color: white;
+	}
+}

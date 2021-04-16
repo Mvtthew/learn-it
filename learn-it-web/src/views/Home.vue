@@ -11,7 +11,7 @@
 				<p class="mb-4">Najlepsza aplikacja do nauki <strong>wszystkiego</strong>.</p>
 				<router-link to="/login" class="btn btn-primary me-2 btn-lg">
 					Rozpocznij naukę
-					<i class="bx bx-caret-right ms-1"></i>
+					<i class="bx bx-caret-right"></i>
 				</router-link>
 			</div>
 		</div>

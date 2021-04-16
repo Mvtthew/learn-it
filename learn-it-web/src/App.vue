@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<Navbar />
+		<navbar />
 		<main class="container py-5">
 			<vue-page-transition name="fade-in-right">
 				<router-view />
