@@ -1,12 +1,38 @@
 <template>
-	<div class="profile-card bg-dark rounded-3 p-5">
+	<div class="profile-card bg-dark rounded-3 p-4">
 		<div class="rounded-circle avatar mx-auto mb-4">
 			UN
 			<span class="level bg-primary">69</span>
 		</div>
 		<h4 class="text-center">Username</h4>
+		<div class="progress">
+			<div class="progress-bar" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<small class="d-block text-center">560/1000 xp</small>
+		<div class="mt-4 d-flex justify-content-center">
+			<button
+				class="btn btn-outline-primary btn-icon mx-1"
+				data-bs-toggle="tooltip"
+				data-bs-placement="bottom"
+				title="Kopiuj link do profilu"
+			>
+				<i class="bx bx-link"></i>
+			</button>
+			<button class="btn btn-outline-primary btn-icon mx-1">
+				<i class="bx bx-wrench"></i>
+			</button>
+			<button class="btn btn-outline-primary btn-icon mx-1">
+				<i class="bx bx-log-out"></i>
+			</button>
+		</div>
 	</div>
 </template>
+
+<script>
+export default {
+	name: "ProfileCard",
+};
+</script>
 
 <style scoped lang="scss">
 .avatar {

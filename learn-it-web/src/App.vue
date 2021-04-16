@@ -11,10 +11,17 @@
 </template>
 
 <script>
+import { tooltipsMixin } from "./mixins/tooltips";
 import Footer from "./components/Footer.vue";
 import Navbar from "./components/Navbar.vue";
 export default {
 	components: { Navbar, Footer },
+	mixins: [tooltipsMixin],
+	watch: {
+		$route() {
+			tooltipsMixin.methods.initTooltips();
+		},
+	},
 };
 </script>
 
