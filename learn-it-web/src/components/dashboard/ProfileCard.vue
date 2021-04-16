@@ -2,10 +2,10 @@
 	<div class="profile-card bg-dark rounded-3 p-4">
 		<div class="rounded-circle avatar mx-auto mb-4">
 			UN
-			<span class="level bg-primary">69</span>
+			<span class="level bg-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Następny poziom: 600 (brakuje 40)">69</span>
 		</div>
 		<h4 class="text-center">Username</h4>
-		<div class="progress">
+		<div class="progress" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Następny poziom: 600 (brakuje 40)">
 			<div
 				class="progress-bar bg-primary"
 				role="progressbar"
@@ -15,7 +15,8 @@
 				aria-valuemax="100"
 			></div>
 		</div>
-		<small class="d-block text-center">560/1000 xp</small>
+		<small class="d-block text-center">560 <i class="bx bx-meteor"></i></small>
+
 		<div class="mt-4 d-flex justify-content-center">
 			<button
 				class="btn btn-outline-primary btn-icon mx-1"
