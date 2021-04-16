@@ -8,7 +8,7 @@
 			<i class="bx bx-meteor text-primary"></i>
 			Najnowsze zadanie
 		</h2>
-		<p class="mb-5">Sprawdź swoje umiejętności w najnowszym zadaniu</p>
+		<p class="mb-5">Przetestuj swoje umiejętności w najnowszym zadaniu</p>
 		<a href="#" class="btn btn-lg btn-primary">
 			Przejdź do zadania
 			<i class="bx bx-chevron-right"></i>

@@ -19,13 +19,13 @@ import ProfileCard from "../components/dashboard/ProfileCard.vue";
 import ProfileStatsCard from "../components/dashboard/ProfileStatsCard.vue";
 import TodayTaskCard from "../components/dashboard/NewestTaskCard.vue";
 export default {
+	name: "Dashboard",
 	components: {
 		ProfileCard,
 		CoursesSummaryCard,
 		TodayTaskCard,
 		ProfileStatsCard,
 	},
-	name: "Dashboard",
 	data() {
 		return {
 			now: new Date(),

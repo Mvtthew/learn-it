@@ -1,10 +1,8 @@
 <template>
 	<div class="home">
 		<div class="p-5 mb-5 bg-dark rounded-3 d-flex align-items-center">
-			<div class="me-5">
-				<h1 class="display-1">
-					<i class="bx bx-meteor"></i>
-				</h1>
+			<div class="me-5 ms-5 pe-5">
+				<img src="../assets/logo.png" class="logo" alt="LearnIT logo" />
 			</div>
 			<div>
 				<h1 class="display-1">Learn<span class="text-primary fw-bold">IT</span></h1>
@@ -46,3 +44,10 @@ export default {
 	name: "Home",
 };
 </script>
+
+<style lang="scss" scoped>
+.logo {
+	width: 130px;
+	height: 130px;
+}
+</style>
