@@ -6,4 +6,7 @@ router.get('/', (req, res) => {
 	});
 });
 
+// Tasks routes
+router.use('/tasks', require('./tasks'));
+
 module.exports = router;
