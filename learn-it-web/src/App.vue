@@ -19,6 +19,7 @@ export default {
 	mixins: [tooltipsMixin],
 	watch: {
 		$route() {
+			tooltipsMixin.methods.hideAll();
 			tooltipsMixin.methods.initTooltips();
 		},
 	},
