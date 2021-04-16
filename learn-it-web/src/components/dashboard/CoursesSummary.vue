@@ -14,17 +14,17 @@
 				<div
 					class="progress-bar progress-bar-striped progress-bar-animated"
 					role="progressbar"
-					style="width: 25%;"
-					aria-valuenow="25"
+					style="width: 45%;"
+					aria-valuenow="45"
 					aria-valuemin="0"
 					aria-valuemax="100"
 				>
-					25%
+					45%
 				</div>
 			</div>
 			<a href="#" class="btn btn-sm btn-outline-primary"> Kontynuuj kurs <i class="bx bx-chevron-right"></i> </a>
 		</div>
-		<div>
+		<div class="mb-4">
 			<h4>
 				<i class="bx bxl-react"></i>
 				Kurs React
@@ -39,6 +39,25 @@
 					aria-valuemax="100"
 				>
 					69%
+				</div>
+			</div>
+			<a href="#" class="btn btn-sm btn-outline-primary"> Kontynuuj kurs <i class="bx bx-chevron-right"></i> </a>
+		</div>
+		<div>
+			<h4>
+				<i class="bx bxl-dev-to"></i>
+				Kurs developmentu www
+			</h4>
+			<div class="progress mb-2">
+				<div
+					class="progress-bar progress-bar-striped progress-bar-animated"
+					role="progressbar"
+					style="width: 19%;"
+					aria-valuenow="19"
+					aria-valuemin="0"
+					aria-valuemax="100"
+				>
+					19%
 				</div>
 			</div>
 			<a href="#" class="btn btn-sm btn-outline-primary"> Kontynuuj kurs <i class="bx bx-chevron-right"></i> </a>
