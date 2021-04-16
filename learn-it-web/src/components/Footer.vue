@@ -4,8 +4,8 @@
 			<div class="row">
 				<div class="col">
 					<p class="mb-0">
-						<i class="bx bx-meteor me-2"></i>Learn<span class="text-primary fw-bold">IT</span> by
-						<a href="https://github.com/Mvtthew/">Mati</a>
+						<i class="bx bx-meteor me-2"></i>Learn<span class="text-primary fw-bold">IT</span> by Mati
+						<a href="https://github.com/Mvtthew/" target="_blank"> <i class="bx bxl-github"></i></a>
 					</p>
 				</div>
 				<div class="col text-end">
