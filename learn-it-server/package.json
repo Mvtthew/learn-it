@@ -1,0 +1,27 @@
+{
+  "name": "learn-it-server",
+  "version": "1.0.0",
+  "description": "LearnIT application server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mvtthew/learn-it.git"
+  },
+  "keywords": [
+    "Learning",
+    "app"
+  ],
+  "author": "Mateusz Ozog",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mvtthew/learn-it/issues"
+  },
+  "homepage": "https://github.com/Mvtthew/learn-it#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
