@@ -3,7 +3,7 @@
 		<div class="p-5 mb-5 bg-dark rounded-3 d-flex align-items-center">
 			<div class="me-5">
 				<h1 class="display-1">
-					<i class="bx bxs-truck"></i>
+					<i class="bx bx-meteor"></i>
 				</h1>
 			</div>
 			<div>

@@ -1,7 +1,8 @@
 <template>
-	<div class="profile-card">
+	<div class="profile-card bg-dark rounded-3 p-4">
 		<div class="rounded-circle avatar mx-auto mb-4">
-			<span class="level">69</span>
+			UN
+			<span class="level bg-primary">69</span>
 		</div>
 		<h4 class="text-center">Username</h4>
 	</div>
@@ -11,17 +12,21 @@
 .avatar {
 	width: 150px;
 	height: 150px;
-	background-color: black;
+	background-color: rgb(37, 37, 37);
 	position: relative;
 	border-radius: 0.3rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 3rem;
+	color: rgba(#fff, 0.5);
 
 	.level {
 		border-radius: 50px;
-		background-color: white;
 		top: 0;
 		right: 0;
 		position: absolute;
-		color: black;
+		color: white;
 		display: flex;
 		align-items: center;
 		justify-content: center;

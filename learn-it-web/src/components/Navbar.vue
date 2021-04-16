@@ -2,7 +2,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<div class="container">
 			<router-link class="navbar-brand" to="/"
-				><i class="bx bxs-truck me-2"></i>Learn<span class="text-primary fw-bold">IT</span></router-link
+				><i class="bx bx-meteor me-2"></i>Learn<span class="text-primary fw-bold">IT</span></router-link
 			>
 			<button
 				class="navbar-toggler"
