@@ -16,7 +16,11 @@ body {
 
 .content {
 	width: 100%;
-	padding-right: 3rem;
+	padding-left: 3rem;
+	@media (max-width: 1200px) {
+		padding-left: 0;
+		margin-top: 3rem;
+	}
 }
 
 .sidebar {
@@ -24,6 +28,10 @@ body {
 	top: calc(56px + 3rem);
 	bottom: 0;
 	height: 90vh;
+	@media (max-width: 1200px) {
+		height: unset;
+		position: static !important;
+	}
 }
 
 .btn-icon {

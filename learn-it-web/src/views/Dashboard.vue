@@ -1,15 +1,14 @@
 <template>
-	<div class="d-flex">
+	<div class="d-xl-flex">
+		<div class="sidebar position-sticky">
+			<profile-card class="mb-3"></profile-card>
+			<profile-stats></profile-stats>
+		</div>
 		<div class="content">
 			<h1>Witaj <span class="text-primary">USERNAME</span></h1>
 			<p>Jest {{ now | moment("dddd, DD MMMM YYYY") }}, godzina {{ now | moment("HH:mm:ss") }}</p>
 			<today-task></today-task>
 			<courses-summary></courses-summary>
-		</div>
-
-		<div class="sidebar position-sticky">
-			<profile-card class="mb-3"></profile-card>
-			<profile-stats></profile-stats>
 		</div>
 	</div>
 </template>
