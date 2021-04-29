@@ -3,6 +3,9 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors());
+app.use(express.json());
+
+require('./db');
 
 app.use(require('./router'));
 
