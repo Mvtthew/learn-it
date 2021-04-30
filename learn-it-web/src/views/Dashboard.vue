@@ -5,7 +5,9 @@
 			<profile-stats-card></profile-stats-card>
 		</div>
 		<div class="content">
-			<h1>Witaj <span class="text-primary">USERNAME</span></h1>
+			<h1>
+				Witaj <span class="text-primary">{{ user.login }}</span>
+			</h1>
 			<p>Jest {{ now | moment("dddd, DD MMMM YYYY") }}, godzina {{ now | moment("HH:mm:ss") }}</p>
 			<today-task-card></today-task-card>
 			<courses-summary-card></courses-summary-card>
@@ -30,6 +32,11 @@ export default {
 		return {
 			now: new Date(),
 		};
+	},
+	computed: {
+		user() {
+			return this.$store.state.user.user;
+		},
 	},
 	created() {
 		setInterval(() => {

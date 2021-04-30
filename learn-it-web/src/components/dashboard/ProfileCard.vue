@@ -1,10 +1,10 @@
 <template>
 	<div class="profile-card bg-dark rounded-3 p-4">
 		<div class="rounded-circle avatar mx-auto mb-4">
-			UN
+			{{ user.login[0] }}{{ user.login[1] }}
 			<span class="level bg-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Następny poziom: 600 (brakuje 40)">69</span>
 		</div>
-		<h4 class="text-center">Username</h4>
+		<h4 class="text-center">{{ user.login }}</h4>
 		<div class="progress" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Następny poziom: 600 (brakuje 40)">
 			<div
 				class="progress-bar bg-primary"
@@ -37,13 +37,18 @@
 <script>
 export default {
 	name: "ProfileCard",
+	computed: {
+		user() {
+			return this.$store.state.user.user;
+		},
+	},
 };
 </script>
 
 <style scoped lang="scss">
 .avatar {
-	width: 150px;
-	height: 150px;
+	width: 120px;
+	height: 120px;
 	background-color: rgb(37, 37, 37);
 	position: relative;
 	border-radius: 0.3rem;
