@@ -6,20 +6,24 @@ const User = require("../objects/User");
 
 const db = require("../db");
 
-// TODO: Secure with admin access only
 router.post("/", async (req, res) => {
-	const { login, password } = req.body;
-	if (!login || !password) {
-		res.json(new ResposeError("You need to provide all fields"));
+	const { login, email, password } = req.body;
+	if (!login || !password || !email) {
+		res.json(new ResposeError("You need to provide all fields."));
 		return;
 	}
-	const existingUser = db.get("users").find({ login }).value();
-	if (existingUser) {
-		res.json(new ResposeError("User with this login already exists"));
+	const existingLoginUser = db.get("users").find({ login }).value();
+	if (existingLoginUser) {
+		res.json(new ResposeError("User with this login already exists."));
+		return;
+	}
+	const existingEmailUser = db.get("users").find({ email }).value();
+	if (existingEmailUser) {
+		res.json(new ResposeError("User with this email already exists."));
 		return;
 	}
 	const encryptedPassword = sha256(password);
-	const user = new User(login, encryptedPassword);
+	const user = new User(login, email, encryptedPassword);
 	db.get("users").push(user).write();
 	res.json(user);
 });
