@@ -16,13 +16,12 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item" v-if="isUserLoggedIn">
-						<a class="nav-link" href="#">{{ login }}</a>
-					</li>
-					<li class="nav-item dropdown">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item dropdown" v-if="isUserLoggedIn">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Dropdown
+							<i class="bx bx-user"></i>
+							{{ login }}
+							<span class="badge bg-primary">69</span>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="#">Action</a></li>
@@ -31,14 +30,14 @@
 							<li><a class="dropdown-item" href="#">Something else here</a></li>
 						</ul>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Logowanie</a>
-					</li>
-					<li class="nav-item ms-5">
+					<li class="nav-item ms-2" v-if="isUserLoggedIn">
 						<router-link to="/dashboard" class="nav-link btn btn-sm btn-primary">
 							<i class="bx bxs-dashboard me-2"></i>
 							Dashboard
 						</router-link>
+					</li>
+					<li class="nav-item" v-else>
+						<router-link to="/login" class="nav-link">Logowanie</router-link>
 					</li>
 				</ul>
 			</div>

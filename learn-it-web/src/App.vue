@@ -23,6 +23,9 @@ export default {
 			tooltipsMixin.methods.init();
 		},
 	},
+	created() {
+		if (this.$store.getters.isLoggedIn) this.$store.dispatch("getLoggedUser");
+	},
 };
 </script>
 

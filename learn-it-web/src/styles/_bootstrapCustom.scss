@@ -40,6 +40,23 @@ $primary-to: #681531;
 }
 
 a {
-	color: #fff;
+	color: rgb(192, 192, 192);
 	text-decoration: none;
+	cursor: pointer;
+}
+
+@keyframes nav-item-fade-in {
+	from {
+		opacity: 0;
+		top: 6px;
+	}
+	to {
+		opacity: 1;
+		top: 0;
+	}
+}
+.nav-item {
+	animation: 1s nav-item-fade-in;
+	position: relative;
+	animation-fill-mode: forwards;
 }
