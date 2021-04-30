@@ -1,10 +1,8 @@
 const ResposeError = require("../objects/resposeError");
-
 const router = require("express").Router();
 const sha256 = require("sha256");
 const User = require("../objects/User");
 const { NANO_SIZE } = require("../config");
-
 const db = require("../db");
 const isAuth = require("../middleware/isAuth");
 const { nanoid } = require("nanoid");
