@@ -9,6 +9,8 @@
 export default {
 	name: "Logout",
 	created() {
+		this.$store.commit("clearToken");
+		this.$toast.info("Pomyślnie wylogowano.");
 		setTimeout(() => {
 			this.$router.push("/login");
 		}, 1000);

@@ -23,11 +23,16 @@
 							{{ login }}
 							<span class="badge bg-primary">69</span>
 						</a>
-						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
 							<li><a class="dropdown-item" href="#">Action</a></li>
 							<li><a class="dropdown-item" href="#">Another action</a></li>
 							<li><hr class="dropdown-divider" /></li>
-							<li><a class="dropdown-item" href="#">Something else here</a></li>
+							<li>
+								<router-link to="/logout" class="dropdown-item">
+									<i class="bx bx-log-out"></i>
+									Wyloguj się
+								</router-link>
+							</li>
 						</ul>
 					</li>
 					<li class="nav-item ms-2" v-if="isUserLoggedIn">

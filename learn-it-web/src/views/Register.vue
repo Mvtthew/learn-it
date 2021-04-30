@@ -5,7 +5,7 @@
 			Rejestracja
 		</h1>
 		<p>Stwórz konto i rozpocznij organizować swoją naukę</p>
-		<div class="row pt-5 pb-4">
+		<div class="row pt-5 pb-4" @keypress="enterRegister">
 			<div class="col-lg-5">
 				<register-form :form="form"></register-form>
 			</div>
@@ -31,6 +31,14 @@ export default {
 				check: false,
 			},
 		};
+	},
+	methods: {
+		enterRegister(event) {
+			if (event.key == "Enter") this.register();
+		},
+		register() {
+			console.log(1);
+		},
 	},
 };
 </script>

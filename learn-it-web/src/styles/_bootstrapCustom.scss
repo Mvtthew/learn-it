@@ -60,3 +60,11 @@ a {
 	position: relative;
 	animation-fill-mode: forwards;
 }
+
+.dropdown-item {
+	color: #838383;
+	&:hover {
+		@include primary-gradient;
+		color: white;
+	}
+}

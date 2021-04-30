@@ -1,5 +1,17 @@
 import config from "../config/config";
 
+const saveToken = (token) => {
+	localStorage.setItem("auth-token", JSON.stringify(token));
+};
+
+const loadToken = () => {
+	return JSON.parse(localStorage.getItem("auth-token") || '{"token_type": "", "token": ""}');
+};
+
+const clearToken = () => {
+	localStorage.removeItem("auth-token");
+};
+
 const userStore = {
 	state: () => ({
 		user: {
@@ -7,10 +19,7 @@ const userStore = {
 			login: "",
 			email: "",
 		},
-		token: {
-			token_type: "",
-			token: "",
-		},
+		token: loadToken(),
 	}),
 	getters: {
 		isLoggedIn(state) {
@@ -20,6 +29,11 @@ const userStore = {
 	mutations: {
 		setToken(state, token) {
 			state.token = token;
+			saveToken(token);
+		},
+		clearToken(state) {
+			state.token = { token_type: "", token: "" };
+			clearToken();
 		},
 		setUser(state, user) {
 			state.user = user;

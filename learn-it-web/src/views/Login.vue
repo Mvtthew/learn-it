@@ -5,7 +5,7 @@
 			Logowanie
 		</h1>
 		<p>Zaloguj się i zacznij naukę</p>
-		<div class="row pt-5 pb-4">
+		<div class="row pt-5 pb-4" @keypress="enterLogin">
 			<div class="col-lg-5">
 				<login-form :form="form"></login-form>
 			</div>
@@ -36,6 +36,9 @@ export default {
 		if (this.$store.getters.isLoggedIn) this.$router.push("/dashboard");
 	},
 	methods: {
+		enterLogin(event) {
+			if (event.key == "Enter") this.login();
+		},
 		async login() {
 			this.$toast.info("Autoryzacja...");
 			const res = await fetch(`${config.apiUrl}auth`, {
