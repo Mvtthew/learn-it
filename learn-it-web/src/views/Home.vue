@@ -42,6 +42,9 @@
 <script>
 export default {
 	name: "Home",
+	created() {
+		if (this.$store.getters.isLoggedIn) this.$router.push("/dashboard");
+	},
 };
 </script>
 

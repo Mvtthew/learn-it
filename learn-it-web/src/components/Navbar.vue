@@ -41,8 +41,17 @@
 							Dashboard
 						</router-link>
 					</li>
-					<li class="nav-item" v-else>
-						<router-link to="/login" class="nav-link">Logowanie</router-link>
+					<li class="nav-item" v-if="!isUserLoggedIn">
+						<router-link to="/login" class="nav-link">
+							<i class="bx bx-log-in"></i>
+							Logowanie
+						</router-link>
+					</li>
+					<li class="nav-item" v-if="!isUserLoggedIn">
+						<router-link to="/register" class="nav-link">
+							<i class="bx bx-user-plus"></i>
+							Rejestracja
+						</router-link>
 					</li>
 				</ul>
 			</div>
