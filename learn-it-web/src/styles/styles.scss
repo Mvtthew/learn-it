@@ -2,15 +2,43 @@
 @import "variables";
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600&display=swap");
 
 body {
 	background: #111111;
-	color: #fdfdfd;
+	color: #838383;
 	font-family: "Work Sans";
+	font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	color: rgb(219, 219, 219);
+	font-weight: 500;
+	font-family: "Comfortaa";
+}
+strong {
+	font-weight: 500;
+}
+.font-fancy {
+	font-family: "Comfortaa";
 }
 
 ::-webkit-scrollbar {
-	width: 4px;
+	width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -19,7 +47,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
 	@include primary-gradient;
-	border-radius: 4px;
+	border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {

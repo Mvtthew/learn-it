@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { tooltipsMixin } from "./mixins/tooltips";
+import { tooltipsMixin } from "./mixins/tooltipsMixin";
 import Footer from "./components/Footer.vue";
 import Navbar from "./components/Navbar.vue";
 export default {

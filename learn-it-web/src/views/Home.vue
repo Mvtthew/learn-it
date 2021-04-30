@@ -6,7 +6,7 @@
 			</div>
 			<div>
 				<h1 class="display-1">Learn<span class="text-primary fw-bold">IT</span></h1>
-				<p class="mb-4">Najlepsza aplikacja do nauki <strong>wszystkiego</strong>.</p>
+				<p class="mb-4">Najlepsza aplikacja do organizacji nauki <strong>wszystkiego</strong>.</p>
 				<router-link to="/login" class="btn btn-primary me-2 btn-lg">
 					Rozpocznij naukę
 					<i class="bx bx-caret-right"></i>
@@ -19,15 +19,15 @@
 				<div class="col-lg-4 text-center">
 					<div class="p-4 rounded-3">
 						<i class="bx bx-alarm display-1 text-primary"></i>
-						<h4 class="mb-4">Zadania</h4>
+						<h4 class="mb-4">Twoje zadania</h4>
 						<p>Wykonuj zadania oraz sprawdzaj siebie w codziennych konkursach</p>
 					</div>
 				</div>
 				<div class="col-lg-4 text-center">
 					<div class="p-4 rounded-3">
 						<i class="bx bx-question-mark display-1 text-primary"></i>
-						<h4 class="mb-4">Odpowiedzi</h4>
-						<p>Zadawaj pytania i otrzymuj odpowiedzi</p>
+						<h4 class="mb-4">Pytania i odpowiedzi</h4>
+						<p>Zadawaj pytania i otrzymuj odpowiedzi od społeczeństwa tej pięknej platformy</p>
 					</div>
 				</div>
 			</div>

@@ -1,11 +1,11 @@
 <template>
 	<div class="login-form">
 		<div class="form-floating mb-2">
-			<input type="email" class="form-control" id="login" placeholder="Login" />
+			<input type="email" class="form-control" id="login" placeholder="Login" v-model="form.login" />
 			<label for="login">Login</label>
 		</div>
 		<div class="form-floating mb-2">
-			<input type="password" class="form-control" id="password" placeholder="Pasword" />
+			<input type="password" class="form-control" id="password" placeholder="Pasword" v-model="form.password" />
 			<label for="password">Password</label>
 		</div>
 		<div class="form-check form-switch">
@@ -18,5 +18,11 @@
 <script>
 export default {
 	name: "LoginForm",
+	props: {
+		form: {
+			type: Object,
+			required: true,
+		},
+	},
 };
 </script>

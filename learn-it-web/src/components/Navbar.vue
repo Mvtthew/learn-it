@@ -1,7 +1,7 @@
 <template>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 		<div class="container">
-			<router-link class="navbar-brand" to="/"
+			<router-link class="navbar-brand font-fancy" to="/"
 				><i class="bx bx-meteor me-2"></i>Learn<span class="text-primary fw-bold">IT</span></router-link
 			>
 			<button
@@ -17,8 +17,8 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
+					<li class="nav-item" v-if="isUserLoggedIn">
+						<a class="nav-link" href="#">{{ login }}</a>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,6 +49,14 @@
 <script>
 export default {
 	name: "Navbar",
+	computed: {
+		login() {
+			return this.$store.state.user.user.login;
+		},
+		isUserLoggedIn() {
+			return this.$store.getters.isLoggedIn;
+		},
+	},
 };
 </script>
 
