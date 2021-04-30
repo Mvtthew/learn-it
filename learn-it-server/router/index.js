@@ -9,6 +9,9 @@ router.get("/", (req, res) => {
 // Users routes
 router.use("/users", require("./users"));
 
+// Auth routes
+router.use("/auth", require("./auth"));
+
 // Tasks routes
 router.use("/tasks", require("./tasks"));
 
