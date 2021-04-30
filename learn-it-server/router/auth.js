@@ -9,11 +9,13 @@ const router = require("express").Router();
 router.post("/", (req, res) => {
 	const { login, email, password } = req.body;
 	if ((!password && !login) || (!password && !email)) {
-		res.json(
-			new ResposeError(
-				"You need to provide login/password, email/password combination."
-			)
-		);
+		res
+			.status(400)
+			.json(
+				new ResposeError(
+					"You need to provide login/password, email/password combination."
+				)
+			);
 		return;
 	}
 	const encryptedPassword = sha256(password);
@@ -23,12 +25,16 @@ router.post("/", (req, res) => {
 	else
 		user = db.get("users").find({ email, password: encryptedPassword }).value();
 	if (!user) {
-		res.json(new ResposeError("Invalid credentials."));
+		res.status(401).json(new ResposeError("Invalid credentials."));
 		return;
 	}
-	const token = jwt.sign({ user }, JWT_SECRET, {
-		algorithm: "HS256",
-	});
+	const token = jwt.sign(
+		{ id: user.id, login: user.login, email: user.email },
+		JWT_SECRET,
+		{
+			algorithm: "HS256",
+		}
+	);
 	res.json({
 		token_type: "Bearer",
 		token,
