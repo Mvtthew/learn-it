@@ -1,15 +1,19 @@
 import config from "../config/config";
 
-const saveToken = (token) => {
-	localStorage.setItem("auth-token", JSON.stringify(token));
+const saveToken = (token, lc = false) => {
+	if (lc) localStorage.setItem("auth-token", JSON.stringify(token));
+	else sessionStorage.setItem("auth-token", JSON.stringify(token));
 };
 
 const loadToken = () => {
-	return JSON.parse(localStorage.getItem("auth-token") || '{"token_type": "", "token": ""}');
+	return (
+		JSON.parse(localStorage.getItem("auth-token")) || JSON.parse(sessionStorage.getItem("auth-token") || '{"token_type": "", "token": ""}')
+	);
 };
 
 const clearToken = () => {
 	localStorage.removeItem("auth-token");
+	sessionStorage.removeItem("auth-token");
 };
 
 const userStore = {
@@ -27,9 +31,10 @@ const userStore = {
 		},
 	},
 	mutations: {
-		setToken(state, token) {
+		setToken(state, { token, remember }) {
+			console.log(remember);
 			state.token = token;
-			saveToken(token);
+			saveToken(token, remember);
 		},
 		clearToken(state) {
 			state.token = { token_type: "", token: "" };

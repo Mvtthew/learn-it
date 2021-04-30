@@ -29,6 +29,7 @@ export default {
 			form: {
 				login: "",
 				password: "",
+				remember: false,
 			},
 		};
 	},
@@ -50,7 +51,7 @@ export default {
 			});
 			const data = await res.json();
 			if (!data.error) {
-				this.$store.commit("setToken", data);
+				this.$store.commit("setToken", { token: data, remember: this.form.remember });
 				this.$store.dispatch("getLoggedUser");
 				this.$toast.success("Poprawne dane logowania");
 				setTimeout(() => {
