@@ -8,7 +8,7 @@
 				<h1 class="display-1">Learn<span class="text-primary fw-bold">IT</span></h1>
 				<p class="mb-4">Najlepsza aplikacja do organizacji nauki <strong>wszystkiego</strong>.</p>
 				<router-link to="/login" class="btn btn-primary me-2 btn-lg">
-					Rozpocznij naukę
+					Zacznij organizować już od dziś
 					<i class="bx bx-caret-right"></i>
 				</router-link>
 			</div>

@@ -11,6 +11,9 @@
 			</div>
 		</div>
 		<button class="btn btn-lg btn-primary" @click="login">Zaloguj się <i class="bx bx-caret-right"></i></button>
+		<div class="mt-2">
+			<router-link to="/register">Nie masz konta?</router-link>
+		</div>
 	</div>
 </template>
 
